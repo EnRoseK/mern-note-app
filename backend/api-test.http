@@ -1,0 +1,27 @@
+###
+GET http://localhost:5000/api/notes
+
+###
+GET http://localhost:5000/api/notes/640889b2c43b697031a21ed3
+
+###
+POST http://localhost:5000/api/notes
+Content-Type: application/json
+
+{
+  "title": "Note 2",
+  "text": "Dummy Text"
+}
+
+###
+PATCH http://localhost:5000/api/notes/640889c6c43b697031a21ed7
+Content-Type: application/json
+
+{
+  "title": "Note Updated",
+  "text": "Note Text Updated"
+  
+}
+
+###
+DELETE http://localhost:5000/api/notes/640889dac43b697031a21edc
